@@ -116,4 +116,4 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.UpdateOwnProfile,)
     filter_backends = (filters.SearchFilter,)
-    search_fields = ('username', 'email',)
+    search_fields = ('username', 'email', 'first_name', 'last_name')
